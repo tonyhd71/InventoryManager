@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="536.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.ModifyPartController">
+   <children>
+      <VBox layoutX="177.0" layoutY="102.0" prefHeight="175.0" prefWidth="183.0" spacing="10.0">
+         <children>
+            <TextField fx:id="idAmountModify" />
+            <TextField fx:id="nameOfThePartModify" />
+            <TextField fx:id="invAmountModify" />
+            <TextField fx:id="priceCostModify" />
+            <TextField fx:id="machineOrCompanyModify" />
+         </children>
+      </VBox>
+      <HBox layoutX="83.0" layoutY="39.0" prefHeight="38.0" prefWidth="319.0" spacing="10.0">
+         <children>
+            <Label text="Modify Part" />
+            <RadioButton fx:id="inHouseModify" mnemonicParsing="false" onAction="#clickInHouseRadioButton" text="inHouseRadio" />
+            <RadioButton fx:id="outSourceModify" mnemonicParsing="false" onAction="#clickOutSourceRadioButton" text="outSourcedRadio" />
+         </children>
+      </HBox>
+      <VBox layoutX="9.0" layoutY="106.0" prefHeight="279.0" prefWidth="148.0" spacing="18.0">
+         <children>
+            <Label fx:id="ID" text="ID" />
+            <Label fx:id="labelOfThePart" text="Name" />
+            <Label fx:id="Inv" text="Inv" />
+            <Label fx:id="PriceCost" text="Price/Cost" />
+            <Label fx:id="machineOrCompanyLabel" text="Company Name" />
+         </children>
+      </VBox>
+      <HBox layoutX="169.0" layoutY="323.0" prefHeight="51.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Button fx:id="saveButton" mnemonicParsing="false" onAction="#ModifyPartsOutSourceClickSave" text="Save" />
+            <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#ModifyCancelButtonClicked" text="Cancel" />
+         </children>
+      </HBox>
+      <HBox layoutX="143.0" layoutY="277.0" prefHeight="51.0" prefWidth="385.0" spacing="10.0">
+         <children>
+            <Label fx:id="Max" text="Max" />
+            <TextField fx:id="maxValueModify" />
+            <Label fx:id="Min" text="Min" />
+            <TextField fx:id="minValueModify" />
+         </children>
+      </HBox>
+      <Label fx:id="parts_info" layoutX="243.0" layoutY="430.0" text="Label" />
+
+   </children>
+</AnchorPane>
